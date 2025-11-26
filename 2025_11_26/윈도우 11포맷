@@ -1,0 +1,17 @@
+"Shift+F10" 키로 명령 프롬프트를 띄운 뒤 OOBE\BYPASSNRO를 입력하면 네트워크 없이 설치를 진행했다.
+
+드라이버 설치 이후에도 너트워크연결 안됨
+
+압둘라 라는 사람이 쓴거발견
+1- 레지스트리 설정 수정
+Win + R을 누르고 regedit를 입력한 후 Enter를 누릅니다.
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\인터넷
+
+EnableActiveProbing을 찾으세요.
+
+해당 항목이 없으면 EnableActiveProbing이라는 이름의 새 DWORD(32비트) 값을 만듭니다.
+
+값 데이터를 1로 설정합니다.
+
+PC를 다시 시작하고 문제가 해결되었는지 확인하세요.
