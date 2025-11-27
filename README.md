@@ -25,5 +25,3 @@
     <th width="14%">test</th>
   </tr>
 </table>
-
-링크는?
